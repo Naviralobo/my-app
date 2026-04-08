@@ -11,7 +11,7 @@ const learningConcepts = [
     id: 2,
     title: "Data Fetching",
     description:
-      "Get to know the older way of generating static pages using getStaticProps and getStaticPths",
+      "Get to know the older way of generating static pages using getStaticProps and getStaticPaths",
   },
   {
     id: 3,
@@ -44,7 +44,10 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {learningConcepts.map((concept) => (
-              <div className="border border-muted p-6 rounded-lg">
+              <div
+                key={concept.id}
+                className="border border-muted p-6 rounded-lg"
+              >
                 <h3 className="text-lg font-semibold text-primary">
                   {concept.title}
                 </h3>
