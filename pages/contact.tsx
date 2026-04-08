@@ -87,7 +87,7 @@ export default function Contact() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full text-white border border-primary p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-primary mb-4"
+            className="w-full border border-primary p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-primary mb-4"
           />
           {errors.name && <p className="text-sm text-error">{errors.name}</p>}
           <label className="text-md text-primary ">
@@ -100,7 +100,7 @@ export default function Contact() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full text-white border border-primary p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-primary mb-4 "
+            className="w-full  border border-primary p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-primary mb-4 "
           />
           {errors.email && <p className="text-sm text-error">{errors.email}</p>}
           <label className="text-md text-primary ">
@@ -113,7 +113,7 @@ export default function Contact() {
             onChange={handleChange}
             rows={2}
             required
-            className="w-full text-white border border-primary p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-primary mb-4"
+            className="w-full border border-primary p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-primary mb-4"
           />
           {errors.message && (
             <p className="text-sm text-error">{errors.message}</p>

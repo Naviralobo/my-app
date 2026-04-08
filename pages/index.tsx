@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 
 const learningConcepts = [
   {
@@ -23,22 +24,22 @@ const learningConcepts = [
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <div className="px-12">
         <section className="text-center pt-16">
           <h1 className="text-4xl font-bold text-primary">
             Learn NextJs the right way
           </h1>
-          <p className="mt-4 text-muted text-lg">
+          <p className="mt-4 mb-8 text-muted text-lg">
             Deeper understanding on Next to help you build scalable React
             applications through Next
           </p>
-          <button className="mt-6 bg-primary text-white px-6 py-3 rounded-lg cursor-pointer hover:bg-primary/90 transition-colors duration-300 ease-in-out">
+          <Link href="/blogs" className=" bg-primary text-white px-6 py-3 rounded-lg cursor-pointer hover:bg-primary/90 transition-colors duration-300 ease-in-out">
             Explore blogs
-          </button>
+          </Link>
         </section>
 
-        <section className="py-12">
+        <section className="py-12 max-w-4xl">
           <h2 className="text-2xl font-semibold mb-6 text-center">
             What you'll learn
           </h2>
@@ -51,7 +52,7 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-primary">
                   {concept.title}
                 </h3>
-                <p className="text-muted mt-2">{concept.description}</p>
+                <p className="text-sm text-muted mt-2">{concept.description}</p>
               </div>
             ))}
           </div>

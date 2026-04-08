@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,6 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-
         <Bars3Icon
           className="w-6 h-6 md:hidden cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
