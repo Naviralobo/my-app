@@ -41,4 +41,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 
 ## 🚀 Live Demo
 
-👉 [View Project](https://your-project-name.vercel.app)
+👉 [View Project](https://blog-app-three-liard.vercel.app)
